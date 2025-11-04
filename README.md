@@ -41,7 +41,7 @@ marketplace/
 - Uses the CLAUDE_PLUGIN_ROOT variable to reference the plugin directory
 
 **create-file.sh**
-- Creates `/workspace/SESSION_START_HOOK_COMPLETE` file if it does not exist
+- Creates `SESSION_START_HOOK_COMPLETE` file in working directory if it does not exist
 - Writes timestamp of hook execution
 - Provides console feedback on creation status
 
@@ -49,7 +49,7 @@ marketplace/
 
 The plugin implements a SessionStart hook that should execute when Claude Code initializes. The hook runs a bash script that:
 
-1. Checks if `/workspace/SESSION_START_HOOK_COMPLETE` exists
+1. Checks if `SESSION_START_HOOK_COMPLETE` exists in working directory
 2. If absent, creates the file with execution timestamp
 3. If present, logs that the file already exists
 
@@ -96,5 +96,5 @@ For the complete bug demonstration, reproduction steps, and testing instructions
 - Marketplace ID: `plugin-load-timing`
 - Plugin ID: `sessionstart-hook-demonstration`
 - Hook Type: SessionStart
-- Target File: `/workspace/SESSION_START_HOOK_COMPLETE`
+- Target File: `SESSION_START_HOOK_COMPLETE` (created in working directory)
 - Claude Code Version: Affects current versions with asynchronous marketplace loading
