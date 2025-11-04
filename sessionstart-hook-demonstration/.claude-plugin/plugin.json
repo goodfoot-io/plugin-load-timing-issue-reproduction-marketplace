@@ -1,0 +1,8 @@
+{
+  "name": "sessionstart-hook-demonstration",
+  "version": "1.0.0",
+  "description": "Creates SESSION_START_HOOK_COMPLETE file at session start",
+  "author": {
+    "name": "Demo"
+  }
+}

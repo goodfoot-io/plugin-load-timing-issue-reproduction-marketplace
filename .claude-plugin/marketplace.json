@@ -1,0 +1,13 @@
+{
+  "name": "sessionstart-demo-marketplace",
+  "owner": {
+    "name": "Demo"
+  },
+  "plugins": [
+    {
+      "name": "sessionstart-hook-demonstration",
+      "source": "./sessionstart-hook-demonstration",
+      "description": "Demonstrates SessionStart hook by creating a file"
+    }
+  ]
+}
