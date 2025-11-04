@@ -26,7 +26,7 @@ marketplace/
 ### Key Files
 
 **marketplace.json**
-- Defines the marketplace name: `sessionstart-demo-marketplace`
+- Defines the marketplace name: `plugin-load-timing`
 - Registers the `sessionstart-hook-demonstration` plugin
 - Points to the local plugin directory
 
